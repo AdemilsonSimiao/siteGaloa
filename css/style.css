@@ -11,6 +11,7 @@ body{
     max-width: 1366px;
 }
 .container{
+    max-width:100vw;
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 5% 93% 2%;
@@ -21,13 +22,16 @@ body{
 
 header{
     grid-area: h;
+    margin-left: -40px
 }
 .header{
     justify-content: space-around;
     align-items: center;
     background: #FDF1EB;
     display: flex;
+    
 }
+
 .anais p{
     color: #725C5C;
     font-size: 14px;
@@ -122,11 +126,13 @@ li{
 }
 li:hover{
     border-left: solid 5px #EE7A3A;
+    background-color: #FDF1EB;
     cursor: pointer;
 }
 /********************************************* Area do Aside******************************************/
 main{
    grid-area: m;
+   max-width: 99%;
 }
 .content{
     display: grid;
